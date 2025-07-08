@@ -1,0 +1,105 @@
+@media (max-width: 770px) {
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas iguales */
+        grid-template-rows: repeat(2, auto);
+        /* 2 filas automáticas */
+        gap: 25px;
+        /* Espacio entre columnas y filas (opcional) */
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contenedor {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .tecnologias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .neon_texto {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .descripcion {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .subtitulo {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .carrousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .botton {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .rbtn {
+        padding: 10px;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        /* Lo pega a la derecha del contenedor */
+        top: 40%;
+        /* Opcional: lo centra verticalmente */
+        transform: translateY(-50%);
+        /* Alinea verticalmente con el centro */
+    }
+
+    .lbtn {
+        padding: 10px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        /* Lo pega a la izquierda del contenedor */
+        top: 40%;
+        /* Opcional: lo centra verticalmente */
+        transform: translateY(-50%);
+        /* Alinea verticalmente con el centro */
+    }
+
+    .card-list {
+        display: flex;
+        flex-direction: row;
+        transition: 0.4s all;
+        transform: translateX(-630px);
+        position: absolute;
+        perspective: 1200px;
+    }
+
+    
+
+}
