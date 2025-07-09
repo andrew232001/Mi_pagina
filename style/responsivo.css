@@ -63,10 +63,6 @@
         
     }
 
-    .card {
-        
-    }
-
     .botton {
         width: 100%;
         padding: 10px;
@@ -115,7 +111,7 @@
         transition: 0.4s all;
         display: flex;
         position: absolute;
-        left: -65%;
+        left: -52%;
         top: 0;
         transform: translateX(-250%);
         perspective: 1350px;
