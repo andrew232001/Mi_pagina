@@ -2,129 +2,171 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portafolio Andrew Quezada</title>
-    <link rel="stylesheet" href="style\diseño.css" />
-    <link rel="stylesheet" href="style\responsivo.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Andrew Quezada — Portafolio</title>
+    <meta name="description"
+        content="Ingeniero en Informática. Desarrollo de software, automatización y data. Portafolio, proyectos y contacto." />
+    <meta property="og:title" content="Andrew Quezada — Portafolio" />
+    <meta property="og:description"
+        content="Ingeniero en Informática. Desarrollo de software, automatización y data." />
+    <meta property="og:type" content="website" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/diseño.css">
 </head>
 
 <body>
-    <header class="cabezera">
-        <nav>
-            <ul class="menu">
-                <li><a class="navegacion" href="#sobre-mi">Sobre mi</a></li>
-                <li><a class="navegacion" href="#tecnologias">Tecnologias</a></li>
-                <li><a class="navegacion" href="#proyectos">Proyectos</a></li>
-                <li><a class="navegacion" href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container nav">
+            <div class="brand">Andrew <b>Quezada</b></div>
+            <nav class="nav-links">
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#habilidades">Tecnologías</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">Menú ▾</button>
+        </div>
     </header>
 
     <main>
-        <section id="sobre-mi">
-            <div class="contenedor_general">
-                <div class="contenedor">
-                    <h1 class="titulo neon_texto"> Soy Andrew Quezada</h1>
-                    <h3 class="subtitulo neon_texto">Ingeniero en informática</h3>
-                    <p class="descripcion">
-                        Programador apasionado por las nuevas tecnologías y el desarrollo de
-                        software. Me gusta aprender y mejorar mis habilidades
-                        constantemente. Tengo experiencia en varios lenguajes de programación y
-                        disfruto trabajar en proyectos desafiantes que me permitan crecer
-                        profesionalmente.
-                    </p>
-                    <a href="assets\pdf\Curriculum Andrew Quezada.pdf" download>
-                        <button class="btn-cv">Descargar CV</button>
-                    </a>
+        <!-- HERO -->
+        <section class="hero  sobre-mi" id="sobre-mi">
+            <div class="container">
+                <span class="kicker">Ingeniero en Informática</span>
+                <h1>Desarrollo software con enfoque en automatización y datos</h1>
+                <p class="lead">Programador con experiencia en <b>Python</b> (Django, Selenium), <b>SQL</b> (Oracle,
+                    PostgreSQL), y fundamentos de <b>frontend</b>. Me motiva construir soluciones limpias, medibles
+                    y
+                    escalables.</p>
+                <div class="cta">
+                    <a class="btn" href="#proyectos">Ver proyectos</a>
+                    <a class="btn secondary" href="#contacto">Contactar</a>
+                    <a class="btn secondary" href="assets\pdf\Curriculum Andrew Quezada.pdf" download>Descargar
+                        CV</a>
                 </div>
-                <img class="img_caricatura" src="assets\img\mi_caricatura_sad.png" alt="img_caricatura" />
             </div>
-        </section>
-        <section>
-            <h2 class="titulo neon_texto" id="tecnologias">Tecnologías</h2>
-
-            <div class="carrusel">
-                <div class="interior">
-                    <div class="carta">
-                        <img src="assets/img/HTML.png" alt="HTML" class="img_tecnologia" id="HTML" />
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="carta">
-                        <img src="assets/img/css.png" alt="CSS" class="img_tecnologia" id="CSS"/>
-                        <h3>CSS</h3>
-                    </div>
-                    <div class="carta">
-                        <img src="assets/img/javascript.png" alt="JavaScript" class="img_tecnologia" id="javascript" />
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div class="carta">
-                        <img src="assets/img/Python.png" alt="Python" class="img_tecnologia" id="Python"/>
-                        <h3>Python</h3>
-                    </div>
-                    <div class="carta">
-                        <img src="assets/img/java.png" alt="Java" class="img_tecnologia" id="java" />
-                        <h3>Java</h3>
-                    </div>
-                    <div class="carta">
-                        <img src="assets/img/Oracle.png" alt="Oracle" class="img_tecnologia" id=" Oracle" />
-                        <h3>SQL Oracle</h3>
-                    </div>
-                    <div class="carta">
-                        <img src="assets/img/Postgresql.png" alt="Postgrestsql" class="img_tecnologia" id="PostgreSQL"/>
-                        <h3>PostgreSQL</h3>
-                    </div>
+            <div class="hero-card">
+                <div class="hero-img">
+                    <img class="Logo-andrew" src="assets\img\mi_caricatura_sad.png" alt="Logo Andrew">
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2 class="titulo neon_texto" id="proyectos">Proyectos</h2>
 
-            <div class="proyectos">
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="habilidades">
+            <div class="container">
+                <h2>Tecnologías</h2>
+                <p class="muted">Stack principal y herramientas que uso en proyectos reales.</p>
+                <div class="skills" aria-label="Lista de tecnologías">
+                    <div class="skill"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            alt="Python"><b>Python</b></div>
+                    <div class="skill"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                            alt="Django"><b>Django</b></div>
+                    <div class="skill"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                            alt="PostgreSQL"><b>PostgreSQL</b></div>
+                    <div class="skill"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+                            alt="Oracle"><b>Oracle SQL</b></div>
+                    <div class="skill"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript"><b>JavaScript</b></div>
+                    <div class="skill"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5"><b>HTML5</b></div>
+                    <div class="skill"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            alt="CSS3"><b>CSS3</b></div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+                            alt="Git"><b>Git</b></div>
+                    <div class="skill"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
+                            alt="Selenium"><b>Selenium</b></div>
+                </div>
+            </div>
+        </section>
 
-                <div class="proyecto">
-                    <div class="imagen-con-texto">
-                        <img src="assets/img/Proyecto_Minimarket.png" alt="Proyecto_Minimarket" class="img_proyecto1" />
-                        <div class="texto-superpuesto">
-                            <h3>Sistema de ventas y administración de Stock</h3>
-                            <p>
-                                Proyecto hecho para cubrir la necesidad de una pequeña empresa, con la finalidad de
-                                administrar las ventas dentro del local,
-                                así como el stock de productos.
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="proyectos">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <div class="grid">
+                    <article class="card">
+                        <img class="thumb" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=1200"
+                            alt="Captura de app de ventas y stock (ilustrativa)" />
+                        <div class="card-body">
+                            <h3>Sistema de ventas y administración de stock</h3>
+                            <p class="muted">Aplicación de escritorio para un minimarket con gestión de ventas, control
+                                de
+                                inventario y reportes. Backend en <b>Python</b> y base de datos en <b>PostgreSQL</b>
+                                (cloud).</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Tkinter</span>
+                            </div>
+                            <p style="margin-top:10px">
+                                <a href="#" target="_blank" rel="noopener">Repositorio</a> ·
+                                <a href="#" target="_blank" rel="noopener">Demo</a>
                             </p>
-                            <a href="#" target="_blank">Ver proyecto</a>
                         </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA / EDUCACIÓN -->
+        <section id="experiencia" class="experiencia">
+            <div class="container">
+                <h2>Experiencia & Educación</h2>
+                <div class="timeline">
+                    <div class="item">
+                        <h3>Ingeniería en Informática — Duoc UC</h3>
+                        <time>2019–2025</time>
+                        <p class="muted">Malla con foco en programación, bases de datos y gestión de proyectos.</p>
                     </div>
                 </div>
-
             </div>
-
         </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p class="muted">¿Tienes un proyecto o una vacante? Conversemos.</p>
+                <form action="https://formsubmit.co/andrew.quezada2001@gmail.com" method="POST">
+                    <!-- Campos visibles -->
+                    <input required type="text" name="nombre" placeholder="Tu nombre" />
+                    <input required type="email" name="email" placeholder="Tu email" />
+                    <textarea required name="mensaje" placeholder="Cuéntame brevemente qué necesitas"></textarea>
+
+                    <!-- Opcionales / configuración -->
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio" />
+                    <input type="hidden" name="_next" value="https://andrew232001.github.io/Mi_pagina/gracias.html" />
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+                    <button class="btn" type="submit">Enviar mensaje</button>
+                </form>
+                <p style="margin-top:14px" class="muted">También en <a href="https://github.com/andrew232001"
+                        target="_blank" rel="noopener">GitHub</a> · <a href="https://linkedin.com/in/andrew-quezada"
+                        target="_blank" rel="noopener">LinkedIn</a></p>
+            </div>
+        </section>
+
+
+        <div class="footer">© <span id="y"></span> Andrew Quezada</div>
     </main>
 
-    <footer>
-        <ul>
-            <li>
-                <a href="https://linkedin.com/in/tu-perfil" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/tu-usuario" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:tu.email@gmail.com" target="_blank">
-                    <i class="fa-solid fa-inbox"></i>
-                </a>
-            </li>
-        </ul>
-        <p>© 2025 Andrew Quezada</p>
-    </footer>
+    <script src="Main.js"></script>
 </body>
-<script src="Main.js"></script>
 
 </html>
